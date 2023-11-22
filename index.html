@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
     <link rel="stylesheet" href="./styles/hystmodal.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -22,7 +24,7 @@
             </div>
           </div>
           <div class="header_menu">
-            <a class="header_menu-item button" href="">Наши специалисты</a>
+            <a class="header_menu-item button" href="#specialists">Наши специалисты</a>
             <a class="header_menu-item button" href=""> Запись</a>
             <a class="header_menu-item button" href="">Контакты</a>
             <div class="burger">
@@ -46,8 +48,8 @@
               </div>
             </div>
             <div class="burger_menu">
-              <a class="header_menu-item button" href="">Наши специалисты</a>
-              <a class="header_menu-item button" href=""> Запись</a>
+              <a class="header_menu-item button" href="#specialists">Наши специалисты</a>
+              <a class="header_menu-item button" href="" data-hystmodal="#myModal"> Запись</a>
               <a class="header_menu-item button" href="">Контакты</a>
             </div>
           </div>
@@ -125,6 +127,86 @@
           </li>
         </ul>
       </div>
+      <div class="faq">
+        <div class="accordion-container">
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">
+                Что вы получите на сеансах остеопрактики:
+              </button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">
+                1. Улучшение общего состояния: Остеопрактика может помочь снять напряжение, улучшить
+                подвижность суставов и мышц, а также улучшить осанку. Это может привести к общему
+                улучшению самочувствия и увеличению уровня энергии.
+              </p>
+              <p class="ac-text">
+                2. Снятие боли: Множество людей обращается к остеопрактикам с целью снятия боли в
+                спине, шее, суставах или других частях тела. Остеопатические техники могут помочь
+                снять напряжение и расслабить мышцы, что может привести к снижению болевых ощущений.
+              </p>
+              <p class="ac-text">
+                3. Повышение мобильности: Остеопрактика может помочь улучшить подвижность суставов и
+                гибкость мышц, что особенно важно для людей, страдающих от ограничений движения или
+                мобильности.
+              </p>
+            </div>
+          </div>
+
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">
+                Что вы приобритете после пхода к психологу:
+              </button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">
+                1. Психологическое благополучие: Психологические сеансы могут помочь в разрешении
+                эмоциональных и психологических проблем, управлении стрессом, тревогой и депрессией.
+                Они могут помочь улучшить самооценку, развить лучшее понимание себя и своих
+                отношений, а также разработать стратегии преодоления жизненных трудностей.
+              </p>
+              <p class="ac-text">
+                2. Развитие навыков: В процессе работы с психологом можно развить навыки
+                эмоционального интеллекта, общения, решения проблем и саморегуляции. Психолог может
+                помочь вам разобраться в своих эмоциях и поведенческих реакциях, и научить вас
+                эффективно управлять своими эмоциями и поведением.
+              </p>
+              <p class="ac-text">
+                3. Способствует личностному росту: Посещение психолога может стать полезным опытом
+                для развития и роста личности. Психолог может помочь вам лучше понять себя, свои
+                ценности и цели, а также помочь вам определиться с направлением вашего личного
+                развития.
+              </p>
+            </div>
+          </div>
+
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">Как влияют на вас сеансы рейки:</button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">
+                1. Повышение энергетического уровня: Сеансы рейки могут помочь вам восстановить
+                энергию и сбалансировать ее поток в организме. Рейки способствует устранению
+                блокировок энергии и стимулирует естественные процессы самоисцеления.
+              </p>
+              <p class="ac-text">
+                2. Снижение уровня стресса и напряжения: Рейки может помочь вам расслабиться, снять
+                напряжение и стресс, а также улучшить сон. Это может иметь положительный эффект на
+                ваше общее физическое и психологическое состояние.
+              </p>
+              <p class="ac-text">
+                3. Поддержка здоровья и оздоровление: Рейки может быть использована для поддержки
+                общего здоровья и оздоровления организма. Она может помочь в улучшении иммунной
+                системы, снятии боли, улучшении пищеварения и работы органов, а также улучшении
+                общего состояния и самочувствия.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="methods">
         <div class="title">Методы и подходы в работе</div>
         <div class="methods_items swiper mySwiper">
@@ -145,17 +227,81 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
+      <div class="specialists" id="specialists">
+        <div class="title">Наши специалисты</div>
+        <p class="text center">
+          Доверьте свое благополучие нашим опытным специалистам и откройте для себя гармонию,
+          целостность и великолепие самого себя
+        </p>
+        <div class="specialists_item">
+          <div class="specialist-img">
+            <img src="./img/specialist_1.jpg" />
+          </div>
+          <div class="specialist-text">
+            <p class="name">Винярская Ирина Валериевна</p>
+            <p class="status">
+              высшее медицинское образование, врач- педиатр, доктор медицинских наук, профессор РАН
+            </p>
+            <p class="education">
+              Диплом государственного образца о профессиональной переподготовке «Авторский проект
+              Игоря Нямцу: «Мягкотканные техники в остео- психопрактике» <br />
+              Сертификат Доктора остео- психопрактики<br />
+              Сертификат специалиста остеопрактики Школы практической остеопатии Александра
+              Смирнова<br />
+              Сертификат Pediatrie en osteopathiе французской остеопатической школы
+            </p>
+          </div>
+        </div>
+        <div class="specialists_item reverse">
+          <div class="specialist-img">
+            <img src="./img/specialist_2.jpg" />
+          </div>
+          <div class="specialist-text">
+            <p class="name">Бондина Екатерина Викторовна</p>
+            <p class="status">
+              Клинический психолог (ФГБУ «Центральная государственная медицинская академия»
+              Управления делами Президента Российской Федерации), курс «Гипнотерапия»
+            </p>
+            <p class="education">
+              Сертификат Институт Клинического гипноза РПА, курс «Телесно — ориентированная
+              терапия»<br />
+              Сертификат Московский институт психоанализа
+            </p>
+          </div>
+        </div>
+        <div class="specialists_item">
+          <div class="specialist-img">
+            <img src="./img/specialist_3.jpg" />
+          </div>
+          <div class="specialist-text">
+            <p class="name">Иртюга Мария Александровна</p>
+            <p class="status">
+              Клинический психолог (ФГБУ «Центральная государственная медицинская академия»
+              Управления делами Президента Российской Федерации), автор и ведущий марафона «Свобода
+              от курения», специалист Рейки
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <p>Форма</p>
+      </div>
     </div>
+    <footer class="footer">
+      <p>П.Р.О. «Тело и душу» 2023г.</p>
+      <a href="./policy.html" style="text-decoration: underline">Политика конфиденциальности</a>
+    </footer>
     <div class="hystmodal" id="myModal" aria-hidden="true">
       <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
           <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <!-- Ваш HTML код модального окна -->
+          <p>Форма</p>
         </div>
       </div>
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
   <script src="./scripts/hystmodal.min.js"></script>
   <script src="./scripts/script.js"></script>
 </html>

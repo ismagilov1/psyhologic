@@ -12,6 +12,8 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+new Accordion(".accordion-container");
+
 let check = 0;
 
 const openMenu = () => {
