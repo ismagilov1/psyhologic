@@ -259,15 +259,48 @@ ul li {
 }
 
 .form {
-  height: 300px;
+  margin: 35px 0;
+  padding: 10px 0;
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background: rgba(143, 217, 128, 0.1);
+  border-radius: 25px 0px 25px 0px !important;
+}
+.form_title {
+  font-weight: 500;
+  font-size: 24px;
+  max-width: 600px;
+  padding: 15px 10px;
+}
+.form select {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 10px 0;
+  margin: 5px 0;
+}
+.form input {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 10px 5px;
+  margin: 5px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0;
 }
 
@@ -585,5 +618,8 @@ ul li {
   }
   .specialists_item .specialist-img::before {
     max-width: 220px;
+  }
+  .footer {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

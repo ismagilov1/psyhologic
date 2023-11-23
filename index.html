@@ -25,7 +25,7 @@
           </div>
           <div class="header_menu">
             <a class="header_menu-item button" href="#specialists">Наши специалисты</a>
-            <a class="header_menu-item button" href=""> Запись</a>
+            <a class="header_menu-item button" href="#form"> Запись</a>
             <a class="header_menu-item button" href="">Контакты</a>
             <div class="burger">
               <div class="burger_btn" onclick="openMenu()">
@@ -283,8 +283,20 @@
           </div>
         </div>
       </div>
-      <div class="form">
-        <p>Форма</p>
+      <div class="form" id="form">
+        <form action="">
+          <p class="form_title">
+            Если остались вопросы или хотите записаться на прием, отправьте контакты и мы свяжемся с
+            Вами.
+          </p>
+          <select name="choice" id="form_select">
+            <option id="cons" value="cons">Консультация</option>
+            <option id="gen1" value="gen1">Остеопрактика</option>
+            <option id="gen2" value="gen2">Психолог</option>
+          </select>
+          <input type="text" id="name" placeholder="Имя" />
+          <input type="tel" id="tel" placeholder="Телефон" />
+        </form>
       </div>
     </div>
     <footer class="footer">
@@ -295,7 +307,21 @@
       <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
           <button data-hystclose class="hystmodal__close">Закрыть</button>
-          <p>Форма</p>
+          <div class="form" id="form">
+            <form action="">
+              <p class="form_title">
+                Если остались вопросы или хотите записаться на прием, отправьте контакты и мы
+                свяжемся с Вами.
+              </p>
+              <select name="choice" id="form_select">
+                <option id="cons" value="cons">Консультация</option>
+                <option id="gen1" value="gen1">Остеопрактика</option>
+                <option id="gen2" value="gen2">Психолог</option>
+              </select>
+              <input type="text" id="name" placeholder="Имя" />
+              <input type="tel" id="tel" placeholder="Телефон" />
+            </form>
+          </div>
         </div>
       </div>
     </div>
