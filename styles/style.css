@@ -44,13 +44,9 @@ ul li {
   align-items: center;
   transition: transform 0.5s ease;
 }
-.header_logo-item:not(:hover) {
-  transition: transform 0.5s ease;
-  transform: rotate(0deg);
-}
-.header_logo-item:hover {
-  transition: transform 0.5s ease;
-  transform: rotate(180deg);
+.header_logo img {
+  width: 80px;
+  height: 80px;
 }
 .header_logo-text {
   padding: 0 5px;
@@ -62,6 +58,11 @@ ul li {
 .header_menu-item {
   padding: 10px;
   margin: 0 5px;
+}
+
+.mind-title {
+  text-shadow: 1px 0 10px rgb(93, 93, 93);
+  font-size: 22px !important;
 }
 
 .button {
@@ -134,14 +135,28 @@ ul li {
   margin: 0 7px;
 }
 
+.methods_items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
 .methods_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
   padding: 15px;
-  margin: 60px 0;
+  margin: 20px 0;
   height: 120px;
+  width: 300px;
   text-transform: uppercase;
   background: rgb(220, 220, 220);
   box-shadow: 0px 1px 20px #ccc;
   border-radius: 25px 0px 25px 0px;
+}
+
+.methods_mobile {
+  display: none;
 }
 
 .burger_btn {
@@ -227,8 +242,12 @@ ul li {
   padding: 5px 0;
 }
 .specialist-text .education {
+  margin-left: 15px;
   padding: 5px 0;
   line-height: 130%;
+}
+.specialist-text .education li {
+  list-style: circle;
 }
 
 .reverse {
@@ -574,7 +593,7 @@ form {
   .goals_items {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(11, 1fr);
   }
   .goals_item {
     padding: 5px 0;
@@ -613,6 +632,12 @@ form {
     align-self: center;
     max-width: 200px;
     width: 100%;
+  }
+  .methods {
+    display: none;
+  }
+  .methods_mobile {
+    display: block;
   }
   .specialists {
     display: flex;
