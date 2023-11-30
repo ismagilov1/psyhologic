@@ -331,6 +331,32 @@ form {
   box-shadow: 0px 1px 40px #ccc;
 }
 
+.contacts_items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.contacts .widget {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.contacts_map {
+  border-radius: 10px !important;
+}
+.contacts_map iframe {
+  max-width: 560px !important;
+  height: 600px;
+  margin: 20px 5px 20px 0;
+}
+.contacts_rating iframe {
+  height: 600px !important;
+  max-width: 560px !important;
+  margin: 20px 0 20px 5px;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -661,5 +687,15 @@ form {
   }
   .footer {
     flex-direction: column;
+  }
+  .contacts_map iframe {
+    height: 300px;
+  }
+  .widget {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

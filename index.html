@@ -26,7 +26,7 @@
           <div class="header_menu">
             <a class="header_menu-item button" href="#specialists">Наши специалисты</a>
             <a class="header_menu-item button" href="#form"> Запись</a>
-            <a class="header_menu-item button" href="">Контакты</a>
+            <a class="header_menu-item button" href="#contacts">Контакты</a>
             <div class="burger">
               <div class="burger_btn" onclick="openMenu()">
                 <svg
@@ -48,8 +48,17 @@
               </div>
             </div>
             <div class="burger_menu">
-              <a class="header_menu-item button" href="#specialists">Наши специалисты</a>
-              <a class="header_menu-item button" href="" data-hystmodal="#myModal"> Запись</a>
+              <a class="header_menu-item button" href="#specialists" onclick="autoClose()"
+                >Наши специалисты</a
+              >
+              <a
+                class="header_menu-item button"
+                href="#form"
+                data-hystmodal="#myModal"
+                onclick="autoClose()"
+              >
+                Запись</a
+              >
               <a class="header_menu-item button" href="">Контакты</a>
             </div>
           </div>
@@ -328,6 +337,38 @@
           <input type="tel" id="tel" placeholder="Телефон" required />
           <button id="form_button">Записаться</button>
         </form>
+      </div>
+      <div class="contacts" id="contacts">
+        <div class="title">Контакты и отзывы</div>
+        <div class="contacts_items">
+          <a href="tel:888888888" class="contacts-item">888888888</a>
+          <a href="mail:mail@mail" class="contacts-item">mail@mail</a>
+          <a href="https://yandex.ru/maps/-/CDepbB2-" class="contacts-item"
+            >Москва,улица Пушкина, дом колотушкина</a
+          >
+        </div>
+        <div class="widget">
+          <div class="contacts_map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=59.103974%2C53.423981&mode=poi&poi%5Bpoint%5D=59.113333%2C53.428964&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D39785244057&source=serp_navig&z=13"
+              width="100%"
+              frameborder="1"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+          <div class="contacts_rating">
+            <iframe
+              style="
+                width: 100%;
+                height: 600px;
+                border: 1px solid #e6e6e6;
+                border-radius: 10px;
+                box-sizing: border-box;
+              "
+              src="https://yandex.ru/maps-reviews-widget/39785244057?comments"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="footer">
