@@ -22,10 +22,6 @@ a {
   padding: 0 10px;
 }
 
-header {
-  height: 100vh;
-}
-
 ul li {
   text-decoration: none;
   list-style: none;
@@ -62,7 +58,7 @@ ul li {
 
 .mind-title {
   text-shadow: 1px 0 10px rgb(93, 93, 93);
-  font-size: 22px !important;
+  font-size: 26px !important;
 }
 
 .button {
@@ -91,6 +87,10 @@ ul li {
   max-height: 820px;
   height: 100%;
   box-shadow: 0px 1px 50px #ccc;
+}
+.main_logo {
+  max-width: 400px;
+  padding: 15px 0;
 }
 .main_img::before {
   content: "";
@@ -182,6 +182,13 @@ ul li {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .h1 {
@@ -331,6 +338,9 @@ form {
   box-shadow: 0px 1px 40px #ccc;
 }
 
+.contacts {
+  margin-bottom: 20px;
+}
 .contacts_items {
   display: flex;
   flex-direction: column;
@@ -343,18 +353,28 @@ form {
   grid-template-columns: 1fr 1fr;
   width: 100%;
 }
-.contacts_map {
-  border-radius: 10px !important;
+.contacts .rating_items {
+  height: 420px;
 }
-.contacts_map iframe {
-  max-width: 560px !important;
-  height: 600px;
-  margin: 20px 5px 20px 0;
+.contacts .rating_item {
+  border-radius: 25px 0px 25px 0px !important;
+  box-shadow: 0px 1px 10px #ccc;
+  max-height: 340px;
+  height: 100%;
+  margin: 10px;
+  padding: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 22px;
 }
-.contacts_rating iframe {
-  height: 600px !important;
-  max-width: 560px !important;
-  margin: 20px 0 20px 5px;
+.contacts .rating_item .client_name {
+  padding: 10px 0;
+  font-weight: 900;
+}
+.contacts .rating_item .client_rating {
+  overflow: scroll;
 }
 
 .footer {
@@ -603,6 +623,10 @@ form {
     padding: 20px 0;
     display: flex;
     flex-direction: column;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
   }
   .main_img {
     padding: 10px;
